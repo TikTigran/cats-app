@@ -1,0 +1,29 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #282c34;
+  z-index: 999;
+  .categories {
+    display: flex;
+    flex-direction: column;
+    .category {
+      display: flex;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #e3342f;
+      cursor: pointer;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
